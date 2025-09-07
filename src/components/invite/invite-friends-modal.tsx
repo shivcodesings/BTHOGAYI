@@ -4,6 +4,7 @@
    const [shareLink, setShareLink] = useState('')
    const [isLoading, setIsLoading] = useState(false)
    const [copied, setCopied] = useState(false)
+ }
 +  const [emails, setEmails] = useState('')
 +  const [invitesSent, setInvitesSent] = useState(0)
 +  const { inviteModalOpen, setInviteModalOpen } = useAppStore()

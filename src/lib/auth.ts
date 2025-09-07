@@ -170,8 +170,9 @@ export class AuthService {
     })
     
     // Validate BITS email
+    if (!this.validateBitsEmail(user.email)) {
+    }
     if (!this.validateCollegeEmail(user.email)) {
-      throw new Error('Please use your verified college email address to sign in')
       throw new Error('Please use your verified college email address to sign in')
     }
     
