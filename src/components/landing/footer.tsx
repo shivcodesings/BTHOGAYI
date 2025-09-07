@@ -147,7 +147,7 @@ export function Footer() {
             className="border-t border-white/10 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center gap-4"
           >
             <p className="text-white/60 text-sm">
-              © 2024 BITSPARK. All rights reserved. Made with ❤️ for BITS students.
+              © 2024 ORIGO. All rights reserved. Made with ❤️ for college students.
             </p>
             <div className="flex gap-6 text-sm">
               <a href="#" className="text-white/60 hover:text-white transition-colors">

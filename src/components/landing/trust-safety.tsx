@@ -7,8 +7,8 @@ import { GlassCard } from '@/components/ui/glass-card'
 const safetyFeatures = [
   {
     icon: UserCheck,
-    title: "BITS Email Verification",
-    description: "Only verified BITS students can join our platform",
+    title: "College Email Verification",
+    description: "Only verified college students can join our platform",
     color: "from-green-500 to-emerald-500"
   },
   {

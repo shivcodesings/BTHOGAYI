@@ -7,26 +7,26 @@ import { GlassCard } from '@/components/ui/glass-card'
 const steps = [
   {
     icon: UserPlus,
-    title: "Sign Up with BITS Email",
-    description: "Create your account using your official BITS email address",
+    title: "Sign Up with College Email",
+    description: "Create your account using your official college email address",
     gradient: "from-blue-500 to-purple-500",
   },
   {
     icon: Heart,
-    title: "Set Your Preferences",
-    description: "Choose similarity preferences and what you're looking for",
+    title: "Join Communities",
+    description: "Discover and join interest-based communities on your campus",
     gradient: "from-pink-500 to-rose-500",
   },
   {
     icon: MessageCircle,
-    title: "Get Matched",
-    description: "Our AI finds compatible connections based on your preferences",
+    title: "Get Smart Matches",
+    description: "AI finds compatible study buddies, activity partners, and friends",
     gradient: "from-purple-500 to-pink-500",
   },
   {
     icon: Coffee,
     title: "Start Connecting",
-    description: "Send messages and build meaningful relationships",
+    description: "Use Rizz in 5 to start quality conversations and build real connections",
     gradient: "from-indigo-500 to-cyan-500",
   }
 ]
@@ -45,12 +45,12 @@ export function HowItWorksSection() {
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
             How{' '}
             <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-              BITSPARK
+              ORIGO
             </span>{' '}
             Works
           </h2>
           <p className="text-xl text-white/70 max-w-3xl mx-auto">
-            Getting started is simple. Follow these steps to begin your journey
+            Getting started is simple. Follow these steps to join your campus community
           </p>
         </motion.div>
 

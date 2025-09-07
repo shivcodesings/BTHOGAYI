@@ -50,10 +50,10 @@ export function HeroSection() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
-                className="inline-flex items-center px-4 py-2 glass-card-strong rounded-full mb-8"
+                className="inline-flex items-center px-6 py-3 glass-card-strong rounded-full mb-8 border border-orange-500/30"
               >
                 <Sparkles className="w-4 h-4 text-yellow-400 mr-2" />
-                <span className="text-white/90 text-sm font-medium">Exclusive to BITS Students</span>
+                <span className="text-white/90 text-sm font-medium">Verified Campus Community</span>
                 <div className="ml-2 flex">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="w-3 h-3 text-yellow-400 fill-current" />
@@ -68,7 +68,7 @@ export function HeroSection() {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight"
               >
-                Find Your Perfect{' '}
+                Smart Socialising{' '}
                 <motion.span 
                   className="text-gradient-romantic"
                   animate={{ 
@@ -80,9 +80,8 @@ export function HeroSection() {
                     ease: 'linear'
                   }}
                 >
-                  Match
+                  for Campus Life
                 </motion.span>
-                <br />at BITS
               </motion.h1>
 
               {/* Enhanced Subheadline */}
@@ -92,9 +91,9 @@ export function HeroSection() {
                 transition={{ duration: 0.8, delay: 0.4 }}
                 className="text-lg md:text-xl text-white/80 mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0"
               >
-                Swipe right on friendship, love, and meaningful connections. 
-                Our AI-powered algorithm matches you with fellow BITS students based on interests, 
-                personality, and compatibility. It's time to find your tribe! 💕
+                Where students meet, hang out & build real connections. 
+                Join verified campus communities, discover study buddies, and create lasting friendships 
+                through AI-powered matching. Break out of your social bubble! 🎓✨
               </motion.p>
 
               {/* Enhanced Stats */}
@@ -147,7 +146,7 @@ export function HeroSection() {
                   onClick={() => navigate('/auth')}
                   className="group shadow-2xl pulse-glow"
                 >
-                  Start Swiping Now! 💖
+                  Join Your Campus Community! 🎓
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </GradientButton>
                 
@@ -178,15 +177,15 @@ export function HeroSection() {
               >
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-green-400 rounded-full pulse-glow"></div>
-                  <span>100% Verified BITS Students</span>
+                  <span>100% Verified College Students</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-blue-400 rounded-full pulse-glow"></div>
-                  <span>AI-Powered Smart Matching</span>
+                  <span>AI-Powered Community Matching</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 bg-purple-400 rounded-full pulse-glow"></div>
-                  <span>Safe & Private Dating</span>
+                  <span>Safe & Authentic Connections</span>
                 </div>
               </motion.div>
             </div>

@@ -76,12 +76,12 @@ export default function AuthCallbackPage() {
 
         // Step 3: Validate BITS email
         setStep(1)
-        setStatus('Validating BITS email...')
+        setStatus('Validating college email...')
         await new Promise(resolve => setTimeout(resolve, 500))
 
-        console.log('🔧 CALLBACK DEBUG: Validating BITS email:', session.user.email)
+        console.log('🔧 CALLBACK DEBUG: Validating college email:', session.user.email)
         
-        if (!AuthService.validateBitsEmail(session.user.email!)) {
+        if (!AuthService.validateCollegeEmail(session.user.email!)) {
           console.error('❌ CALLBACK ERROR: Invalid email domain:', session.user.email)
           await supabase.auth.signOut()
           navigate('/auth?error=invalid-email')

@@ -66,10 +66,10 @@ async def verify_supabase_jwt(token: str) -> Dict[str, Any]:
         
         # Validate BITS email
         email = payload.get("email", "")
-        if not validate_bits_email(email):
+        if not validate_college_email(email):
             raise HTTPException(
                 status_code=status.HTTP_403_FORBIDDEN,
-                detail="Access restricted to BITS students only"
+                detail="Access restricted to verified college students only"
             )
         
         # Extract user information
@@ -102,8 +102,8 @@ async def verify_supabase_jwt(token: str) -> Dict[str, Any]:
             detail=f"Token verification failed: {str(e)}"
         )
 
-def validate_bits_email(email: str) -> bool:
-    """Validate BITS email address"""
+def validate_college_email(email: str) -> bool:
+    """Validate college email address"""
     if not email:
         return False
     
@@ -111,20 +111,39 @@ def validate_bits_email(email: str) -> bool:
         "pilani.bits-pilani.ac.in",
         "goa.bits-pilani.ac.in", 
         "hyderabad.bits-pilani.ac.in",
-        "dubai.bits-pilani.ac.in"
+        "dubai.bits-pilani.ac.in",
+        "iitd.ac.in",
+        "iitb.ac.in",
+        "iitkgp.ac.in",
+        "nitk.edu.in",
+        "nitt.edu"
     ]
     
     email_domain = email.split('@')[-1].lower()
     return email_domain in allowed_domains
 
+# Legacy function for backward compatibility
+def validate_bits_email(email: str) -> bool:
+    return validate_college_email(email)
+
 def get_campus_from_email(email: str) -> str:
-    """Extract campus from BITS email"""
+    """Extract campus from college email"""
     if 'goa.bits-pilani.ac.in' in email:
         return 'Goa'
     elif 'hyderabad.bits-pilani.ac.in' in email:
         return 'Hyderabad'
     elif 'dubai.bits-pilani.ac.in' in email:
         return 'Dubai'
+    elif 'iitd.ac.in' in email:
+        return 'IIT Delhi'
+    elif 'iitb.ac.in' in email:
+        return 'IIT Bombay'
+    elif 'iitkgp.ac.in' in email:
+        return 'IIT Kharagpur'
+    elif 'nitk.edu.in' in email:
+        return 'NIT Karnataka'
+    elif 'nitt.edu' in email:
+        return 'NIT Trichy'
     else:
         return 'Pilani'
 

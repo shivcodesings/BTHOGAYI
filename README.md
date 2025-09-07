@@ -1,41 +1,73 @@
-# BITSPARK - BITS Dating & Social App 🚀💕
+# ORIGO - Smart Socialising for Campus Life 🎓✨
 
-A modern, Tinder-style dating and social networking app exclusively for BITS students across all campuses.
+A community-first social platform exclusively for verified college students, designed to break social barriers and build authentic campus connections.
 
-## ✨ Features
+## ✨ What Makes ORIGO Special
 
-### 🔐 Authentication
-- **Google OAuth Login** - Quick and secure sign-in
-- **BITS Email Validation** - Only @pilani.bits-pilani.ac.in, @goa.bits-pilani.ac.in, @hyderabad.bits-pilani.ac.in, @dubai.bits-pilani.ac.in
-- **Profile Onboarding** - Comprehensive profile setup with interests, preferences, and photos
+### 🏫 Campus-Verified Community
+- **Institutional Email Verification** - Only verified students can join
+- **Student ID Verification** - Manual verification for authenticity
+- **Cross-Campus Networking** - Connect across premier institutions
+- **Safe Environment** - Verified community with zero tolerance for fake profiles
 
-### 👥 CONNECT - Find Friends
-- **Swipe Interface** - Tinder-like card swiping for friend discovery
-- **AI-Powered Matching** - Algorithm based on interests, year, branch, and compatibility
-- **Compatibility Scoring** - Smart matching using multiple factors
-- **Common Interests Display** - See what you have in common
+### 🤝 Smart Socialising Features
+- **AI-Powered Matching** - Find compatible study buddies, activity partners, and friends
+- **Interest Communities** - Join groups based on hobbies, academics, and campus life
+- **Friend Introductions** - Let friends play wingman and introduce compatible people
+- **Rizz in 5 System** - Quality conversations with 5-message starter limit
+- **Daily Discover** - Fresh connections and campus highlights every day
 
-### 💕 SHIPPING - Matchmaking
-- **Friend Matchmaking** - Let friends play cupid and suggest matches
-- **Anonymous Options** - Send ships anonymously or reveal your identity
-- **Dating Compatibility** - AI calculates romantic compatibility scores
-- **Ship Reasons** - Explain why two people would be perfect together
+### 🎯 Core Platforms
 
-### 💬 Smart Messaging
-- **5 Message Limit** - Quality over quantity approach
-- **Connection Management** - Track all your matches and conversations
-- **Platform Integration** - Move to preferred messaging apps after initial connection
+#### 1. **COMMUNITIES** - Join Your Tribe
+- Study groups by subject and semester
+- Hobby circles (music, sports, gaming, art)
+- Event planning committees
+- Support groups and mentorship circles
+- Cultural and regional communities
 
-### 🎯 Daily Match
-- **AI Recommendations** - Get one perfect match every day
-- **Compatibility Algorithm** - Based on interests, personality, and preferences
-- **Fresh Opportunities** - Never run out of potential connections
+#### 2. **SMART MATCHING** - AI-Powered Connections
+- Compatibility scoring based on interests and personality
+- Study buddy finder for academic collaboration
+- Activity partner matching for campus events
+- Quality-focused dating with meaningful connections
 
-### 🏛️ Campus Support
-- **BITS Pilani** - Main campus
-- **BITS Goa** - Beach campus
-- **BITS Hyderabad** - City campus  
-- **BITS Dubai** - International campus
+#### 3. **FRIEND INTRODUCTIONS** - Social Wingman
+- Anonymous friend introductions
+- Compatibility analysis for potential connections
+- Social proof through mutual friends
+- Gamified matchmaking with success tracking
+
+#### 4. **RIZZ IN 5** - Quality Conversations
+- 5-message conversation starters
+- AI-powered icebreaker suggestions
+- Seamless transition to preferred messaging platforms
+- Focus on meaningful interactions over endless chatting
+
+#### 5. **DAILY DISCOVER** - Campus Serendipity
+- Daily featured students and communities
+- Campus event highlights and recommendations
+- Random coffee chat pairings
+- Streak rewards for consistent engagement
+
+#### 6. **CAMPUS EVENTS** - Real-World Meetups
+- Event creation and management tools
+- RSVP tracking and attendee matching
+- Study session coordination
+- Social gathering organization
+
+## 🏛️ Supported Institutions
+
+### Current Support
+- **BITS Pilani** - All campuses (Pilani, Goa, Hyderabad, Dubai)
+- **IITs** - Delhi, Bombay, Kharagpur (expanding)
+- **NITs** - Karnataka, Trichy (expanding)
+
+### Expansion Pipeline
+- Top engineering colleges
+- Premier management institutes
+- Leading liberal arts universities
+- Medical and law schools
 
 ## 🚀 Getting Started
 
@@ -44,180 +76,166 @@ A modern, Tinder-style dating and social networking app exclusively for BITS stu
 - npm or yarn
 - Supabase account
 
-### Installation
+### Quick Setup
 
-1. **Clone the repository**
+1. **Clone and Install**
 ```bash
 git clone <repository-url>
-cd BTHOGAYI
-```
-
-2. **Install dependencies**
-```bash
+cd origo-campus-social
 npm install
 ```
 
-3. **Environment Setup**
-Create a `.env` file in the root directory:
+2. **Environment Configuration**
+Create `.env` file:
 ```env
-VITE_SUPABASE_URL=your_supabase_url
-VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+VITE_SUPABASE_URL=https://pzeftkaxveltnfuorwqn.supabase.co
+VITE_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InB6ZWZ0a2F4dmVsdG5mdW9yd3FuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTU5NzAyNTUsImV4cCI6MjA3MTU0NjI1NX0.TdYIonPgwo2ZpNOH3OS09gjAYqoy0rUtIclnxqPdMeQ
 ```
 
-4. **Database Setup**
-Run the Supabase migration:
-```sql
--- Run the migration in your Supabase SQL editor
--- File: supabase/migrations/20250822233843_amber_lake.sql
-```
-
-5. **Start Development Server**
+3. **Start Development**
 ```bash
 npm run dev
 ```
 
+4. **Access Application**
+- Local: http://localhost:3000
+- Features: All core features with Supabase backend
+
 ## 🏗️ Architecture
 
-### Frontend
-- **React 18** with TypeScript
-- **Vite** for fast development
-- **Tailwind CSS** for styling
-- **Framer Motion** for animations
-- **React Router** for navigation
+### Frontend Stack
+- **React 18** with TypeScript for type safety
+- **Vite** for lightning-fast development
+- **Tailwind CSS** for utility-first styling
+- **Framer Motion** for smooth animations
+- **React Router** for client-side routing
+- **Zustand** for state management
 
-### Backend
-- **Supabase** for database and authentication
-- **PostgreSQL** for data storage
+### Backend Infrastructure
+- **Supabase** for database, auth, and real-time features
+- **PostgreSQL** for robust data storage
+- **Row Level Security** for data protection
 - **Real-time subscriptions** for live updates
+- **Edge Functions** for serverless computing
 
-### Key Components
-- **Auth System** - Google OAuth + BITS email validation
-- **Matching Engine** - AI-powered compatibility algorithm
-- **Swipe Interface** - Tinder-like user experience
-- **Profile Management** - Comprehensive user profiles
-- **Connection System** - Friend and dating connections
+### AI & Recommendations
+- **Local Algorithm** for privacy-first matching
+- **Vector Similarity** for interest-based recommendations
+- **Collaborative Filtering** for improved suggestions
+- **Fallback System** for reliable performance
 
-## 🎨 UI/UX Features
+## 🎨 Design Philosophy
 
-### Design Philosophy
-- **Modern & Engaging** - Not boring, like Tinder
-- **Mobile-First** - Responsive design for all devices
-- **Smooth Animations** - Framer Motion powered interactions
-- **Glass Morphism** - Beautiful glass card effects
-- **Gradient Themes** - Purple, pink, and blue color schemes
+### Inspired by Modern Leaders
+- **Schmooze.in** - Clean, community-focused design
+- **Discord** - Community organization and engagement
+- **Notion** - Intuitive information architecture
+- **Linear** - Smooth animations and micro-interactions
 
-### User Experience
-- **Intuitive Swiping** - Left/right gestures for decisions
-- **Match Celebrations** - Exciting animations for successful matches
-- **Progress Indicators** - Clear feedback on all actions
-- **Responsive Feedback** - Haptic-like visual responses
-
-## 🔧 Configuration
-
-### Matching Algorithm
-The app uses a sophisticated compatibility scoring system:
-
-1. **Interest Similarity (40%)** - Common hobbies and activities
-2. **Academic Compatibility (30%)** - Year and branch considerations
-3. **Activity Level (20%)** - Recent online activity
-4. **Campus Proximity (10%)** - Same campus preference
-
-### User Preferences
-- **Connect Similarity** - +1 for similar, -1 for opposite personalities
-- **Dating Similarity** - +1 for similar, -1 for complementary traits
-- **Looking For** - Friends, dating, or networking
-- **Privacy Settings** - Anonymous or public interactions
-
-## 📱 Mobile Experience
-
-### Responsive Design
-- **Mobile-First** approach
-- **Touch Gestures** - Swipe, tap, and hold interactions
-- **Optimized Layouts** - Perfect for mobile dating app usage
-- **Fast Loading** - Optimized for mobile networks
+### Design Principles
+- **Community First** - Groups and connections over individual profiles
+- **Authentic Interactions** - Real conversations over superficial swiping
+- **Campus Context** - Features designed for student life
+- **Inclusive Design** - Accessible to all students regardless of background
+- **Privacy Conscious** - Transparent data usage and strong privacy controls
 
 ## 🔒 Security & Privacy
 
-### Data Protection
-- **BITS Email Verification** - Only verified students can join
-- **Profile Privacy** - Control what information is visible
-- **Anonymous Options** - Ship anonymously if desired
-- **Secure Authentication** - Google OAuth + Supabase security
+### Multi-Layer Security
+- **Email Domain Validation** - Only verified institutional emails
+- **Student ID Verification** - Manual review process
+- **JWT Authentication** - Secure token-based auth
+- **Row Level Security** - Database-level access control
+- **Content Moderation** - AI + human review system
 
-### Community Safety
-- **Report System** - Flag inappropriate behavior
-- **Moderation Tools** - Admin controls for community safety
-- **Block Features** - Block unwanted users
-- **Content Filtering** - AI-powered inappropriate content detection
+### Privacy Features
+- **Granular Controls** - Choose who can find and contact you
+- **Anonymous Options** - Anonymous introductions and community participation
+- **Data Minimization** - Collect only essential information
+- **Right to Delete** - Complete data removal on request
 
-## 🚀 Deployment
+## 💰 Monetization Strategy
 
-### Build for Production
-```bash
-npm run build
-```
+### Freemium Model
+- **Free Tier**: Full campus access with basic features
+- **Premium (₹399/month)**: Cross-campus networking, advanced filters, priority matching
+- **Digital Goods**: Custom themes, stickers, profile boosts
+- **Pay-Per-Use**: Friend introductions, event promotions, community boosts
 
-### Deploy Options
-- **Vercel** - Recommended for React apps
-- **Netlify** - Great for static sites
-- **Supabase Hosting** - Full-stack solution
+### Revenue Streams
+1. **Subscription Revenue** (60%) - Premium memberships
+2. **In-App Purchases** (25%) - Digital goods and boosts
+3. **Enterprise Partnerships** (10%) - Campus integrations
+4. **Sponsored Content** (5%) - Brand partnerships
+
+## 📊 Success Metrics
+
+### User Engagement
+- **Daily Active Users** - Core engagement tracking
+- **Community Participation** - Group activity and contribution
+- **Connection Quality** - Successful long-term relationships
+- **Campus Event Attendance** - Real-world engagement
+
+### Business Metrics
+- **Premium Conversion Rate** - Target: 10-15%
+- **Average Revenue Per User** - Target: ₹350-450/month
+- **Customer Lifetime Value** - Target: ₹4000-6000
+- **Churn Rate** - Target: <5% monthly
+
+## 🚀 Development Status
+
+### ✅ Completed Features
+- Authentication system with Google OAuth
+- Basic profile creation and onboarding
+- Community discovery interface
+- Smart matching algorithm (local)
+- Real-time messaging foundation
+- Responsive design system
+
+### 🚧 In Development
+- Advanced community features
+- Event planning and management
+- Friend introduction system
+- Premium subscription integration
+- Mobile app development
+
+### 📋 Upcoming Features
+- Video integration for virtual events
+- Advanced AI personality matching
+- Cross-campus networking tools
+- Enterprise campus partnerships
+- Analytics dashboard for insights
 
 ## 🤝 Contributing
 
+We welcome contributions from the student developer community! 
+
 ### Development Guidelines
-1. **Feature Branches** - Create feature branches for new functionality
-2. **Code Quality** - Follow TypeScript and React best practices
-3. **Testing** - Test all new features thoroughly
-4. **Documentation** - Update README for new features
+- **Code Quality** - TypeScript strict mode, ESLint, Prettier
+- **Testing** - Comprehensive test coverage for critical features
+- **Documentation** - Clear documentation for all new features
+- **Security** - Security-first development practices
 
-### Code Style
-- **TypeScript** - Strict type checking
-- **ESLint** - Code quality enforcement
-- **Prettier** - Consistent code formatting
-- **Component Structure** - Reusable, modular components
+### Getting Involved
+1. Fork the repository
+2. Create a feature branch
+3. Implement your changes
+4. Add tests and documentation
+5. Submit a pull request
 
-## 📊 Performance
-
-### Optimization Features
-- **Lazy Loading** - Components load on demand
-- **Image Optimization** - Compressed profile photos
-- **Bundle Splitting** - Efficient code splitting
-- **Caching** - Smart data caching strategies
-
-### Metrics
-- **First Contentful Paint** - < 1.5s
-- **Largest Contentful Paint** - < 2.5s
-- **Cumulative Layout Shift** - < 0.1
-- **First Input Delay** - < 100ms
-
-## 🔮 Future Features
-
-### Planned Enhancements
-- **Video Profiles** - Short video introductions
-- **Group Dating** - Double dates and group activities
-- **Event Integration** - Campus event matching
-- **Advanced Filters** - More detailed preference settings
-- **Push Notifications** - Real-time match alerts
-
-### AI Improvements
-- **Better Matching** - Enhanced compatibility algorithms
-- **Conversation Starters** - AI-generated ice breakers
-- **Personality Analysis** - Deeper user understanding
-- **Predictive Matching** - Future compatibility predictions
-
-## 📞 Support
+## 📞 Support & Community
 
 ### Getting Help
-- **Documentation** - Check this README first
-- **Issues** - Report bugs via GitHub issues
-- **Discussions** - Join community discussions
-- **Email Support** - Contact the development team
+- **Documentation** - Comprehensive guides and API docs
+- **Community Discord** - Join our developer community
+- **Email Support** - support@origo.app
+- **Campus Ambassadors** - Student representatives at each institution
 
-### Community
-- **BITS Students** - Join the exclusive BITS community
-- **Feedback** - Share your experience and suggestions
-- **Feature Requests** - Suggest new features
-- **Bug Reports** - Help improve the app
+### Feedback & Suggestions
+- **Feature Requests** - Submit ideas through GitHub issues
+- **Bug Reports** - Help us improve the platform
+- **User Research** - Participate in user experience studies
+- **Beta Testing** - Early access to new features
 
 ## 📄 License
 
@@ -225,13 +243,13 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 🙏 Acknowledgments
 
-- **BITS Community** - For inspiration and feedback
-- **Supabase Team** - For the amazing backend platform
-- **React Community** - For the excellent frontend framework
-- **Open Source Contributors** - For the libraries and tools used
+- **Student Communities** - For inspiration and continuous feedback
+- **Campus Partners** - Educational institutions supporting our mission
+- **Open Source Community** - For the amazing tools and libraries
+- **Mental Health Advocates** - For highlighting the importance of student wellbeing
 
 ---
 
-**Made with ❤️ for BITS students by BITS students**
+**Made with ❤️ for students, by students**
 
-*Find your perfect match at BITS! 🚀💕*
+*Smart socialising for campus life - where authentic connections begin! 🎓✨*

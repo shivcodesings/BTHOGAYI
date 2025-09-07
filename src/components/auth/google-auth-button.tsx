@@ -76,7 +76,7 @@ export function GoogleAuthButton({ onError, onSuccess }: GoogleAuthButtonProps) 
       <div className="text-center space-y-2">
         <p className="text-white/60 text-sm flex items-center justify-center gap-2">
           <Shield className="w-4 h-4 text-green-400" />
-          🎓 Use your BITS email to join the exclusive community
+          🎓 Use your college email to join the verified community
         </p>
         <div className="flex items-center justify-center gap-4 text-white/50 text-xs">
           <div className="flex items-center gap-1">
@@ -89,7 +89,7 @@ export function GoogleAuthButton({ onError, onSuccess }: GoogleAuthButtonProps) 
           </div>
           <div className="flex items-center gap-1">
             <Sparkles className="w-3 h-3 text-pink-400" />
-            <span>BITS Verified</span>
+            <span>Campus Verified</span>
           </div>
         </div>
       </div>

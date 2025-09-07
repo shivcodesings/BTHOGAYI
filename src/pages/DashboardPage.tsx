@@ -14,38 +14,38 @@ import { useRecommendations, RecommendationItem } from '@/lib/recommendation-api
 const features = [
   {
     icon: Users,
-    title: "Connect",
-    description: "Find friends with similar interests",
+    title: "Communities",
+    description: "Join interest-based campus groups",
     color: "from-blue-500 to-cyan-500",
-    href: "/connect"
+    href: "/communities"
   },
   {
     icon: Heart,
-    title: "Dating",
-    description: "Discover romantic connections",
+    title: "Smart Match",
+    description: "AI-powered study buddy finder",
     color: "from-pink-500 to-rose-500",
-    href: "/dating"
+    href: "/match"
   },
   {
     icon: Ship,
-    title: "Shipping",
-    description: "Let friends play cupid",
+    title: "Introductions",
+    description: "Friend-powered networking",
     color: "from-purple-500 to-pink-500",
-    href: "/shipping"
+    href: "/introductions"
   },
   {
     icon: MessageCircle,
-    title: "Messages",
-    description: "Your conversations",
+    title: "Rizz in 5",
+    description: "Quality conversations",
     color: "from-indigo-500 to-purple-500",
     href: "/messages"
   },
   {
     icon: Dice6,
-    title: "Daily Match",
-    description: "Today's special connection",
+    title: "Daily Discover",
+    description: "Campus highlights & connections",
     color: "from-cyan-500 to-blue-500",
-    href: "/daily-match"
+    href: "/discover"
   },
   {
     icon: Settings,
@@ -107,7 +107,7 @@ export default function DashboardPage() {
               <div className="w-10 h-10 bg-gradient-to-r from-pink-500 to-purple-500 rounded-xl flex items-center justify-center">
                 <Heart className="w-6 h-6 text-white" />
               </div>
-              <span className="text-2xl font-bold text-white">BITSPARK</span>
+              <span className="text-2xl font-bold text-white">ORIGO</span>
             </div>
 
             {/* User Menu */}
@@ -152,7 +152,7 @@ export default function DashboardPage() {
             Welcome back, {user?.display_name || 'Student'}! 👋
           </h1>
           <p className="text-xl text-white/70">
-            Ready to connect at BITS {user?.campus}?
+            Ready to socialise at {user?.campus} campus?
           </p>
         </motion.div>
 

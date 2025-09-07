@@ -2,10 +2,15 @@ import { supabase } from './supabase'
 import { UserProfile } from './supabase'
 
 export class AuthService {
-  // BITS email validation
+  // College email validation (expanded for multiple institutions)
+  static validateCollegeEmail(email: string): boolean {
+    const collegeEmailRegex = /^[a-zA-Z0-9._%+-]+@(pilani\.bits-pilani\.ac\.in|goa\.bits-pilani\.ac\.in|hyderabad\.bits-pilani\.ac\.in|dubai\.bits-pilani\.ac\.in|iitd\.ac\.in|iitb\.ac\.in|iitkgp\.ac\.in|nitk\.edu\.in|nitt\.edu)$/
+    return collegeEmailRegex.test(email)
+  }
+
+  // Legacy method for backward compatibility
   static validateBitsEmail(email: string): boolean {
-    const bitsEmailRegex = /^[a-zA-Z0-9._%+-]+@(pilani\.bits-pilani\.ac\.in|goa\.bits-pilani\.ac\.in|hyderabad\.bits-pilani\.ac\.in|dubai\.bits-pilani\.ac\.in)$/
-    return bitsEmailRegex.test(email)
+    return this.validateCollegeEmail(email)
   }
 
   // Extract campus from email domain
@@ -25,7 +30,7 @@ export class AuthService {
         queryParams: {
           access_type: 'offline',
           prompt: 'consent',
-          hd: 'pilani.bits-pilani.ac.in,goa.bits-pilani.ac.in,hyderabad.bits-pilani.ac.in,dubai.bits-pilani.ac.in'
+          hd: 'pilani.bits-pilani.ac.in,goa.bits-pilani.ac.in,hyderabad.bits-pilani.ac.in,dubai.bits-pilani.ac.in,iitd.ac.in,iitb.ac.in'
         },
       },
     })
@@ -165,9 +170,9 @@ export class AuthService {
     })
     
     // Validate BITS email
-    if (!this.validateBitsEmail(user.email)) {
-      console.error('❌ AUTH ERROR: Invalid BITS email:', user.email)
-      throw new Error('Please use your BITS email address to sign in')
+    if (!this.validateCollegeEmail(user.email)) {
+      throw new Error('Please use your verified college email address to sign in')
+      throw new Error('Please use your verified college email address to sign in')
     }
     
     const campus = this.getCampusFromEmail(user.email)

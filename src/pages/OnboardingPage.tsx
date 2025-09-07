@@ -284,7 +284,7 @@ const OnboardingPage: React.FC = () => {
                 maxLength={500}
               />
               <p className="text-gray-400 text-sm mt-2">
-                {data.bio.length}/500 characters (minimum 20)
+                Help us connect you with your campus community
               </p>
             </div>
           </div>

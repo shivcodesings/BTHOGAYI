@@ -10,11 +10,11 @@ import AuthPage from './pages/AuthPage';
 import OnboardingPage from './pages/OnboardingPage';
 import DashboardPage from './pages/DashboardPage';
 import ProfilePage from './pages/ProfilePage';
-import ConnectPage from './pages/ConnectPage';
-import DatingPage from './pages/DatingPage';
+import CommunitiesPage from './pages/CommunitiesPage';
+import SmartMatchPage from './pages/SmartMatchPage';
 import MessagesPage from './pages/MessagesPage';
-import ShippingPage from './pages/ShippingPage';
-import DailyMatchPage from './pages/DailyMatchPage';
+import IntroductionsPage from './pages/IntroductionsPage';
+import DiscoverPage from './pages/DiscoverPage';
 import SettingsPage from './pages/SettingsPage';
 import AuthCallbackPage from './pages/AuthCallbackPage';
 
@@ -54,14 +54,14 @@ function App() {
               <ProfilePage />
             </AuthGuard>
           } />
-          <Route path="/connect" element={
+          <Route path="/communities" element={
             <AuthGuard>
-              <ConnectPage />
+              <CommunitiesPage />
             </AuthGuard>
           } />
-          <Route path="/dating" element={
+          <Route path="/match" element={
             <AuthGuard>
-              <DatingPage />
+              <SmartMatchPage />
             </AuthGuard>
           } />
           <Route path="/messages" element={
@@ -69,14 +69,14 @@ function App() {
               <MessagesPage />
             </AuthGuard>
           } />
-          <Route path="/shipping" element={
+          <Route path="/introductions" element={
             <AuthGuard>
-              <ShippingPage />
+              <IntroductionsPage />
             </AuthGuard>
           } />
-          <Route path="/daily-match" element={
+          <Route path="/discover" element={
             <AuthGuard>
-              <DailyMatchPage />
+              <DiscoverPage />
             </AuthGuard>
           } />
           <Route path="/settings" element={
@@ -84,6 +84,12 @@ function App() {
               <SettingsPage />
             </AuthGuard>
           } />
+          
+          {/* Legacy route redirects */}
+          <Route path="/connect" element={<Navigate to="/communities" replace />} />
+          <Route path="/dating" element={<Navigate to="/match" replace />} />
+          <Route path="/shipping" element={<Navigate to="/introductions" replace />} />
+          <Route path="/daily-match" element={<Navigate to="/discover" replace />} />
           
           {/* Redirect authenticated users from auth page */}
           <Route path="/auth" element={

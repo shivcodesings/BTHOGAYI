@@ -32,6 +32,20 @@ const campuses = [
     students: "1500+",
     color: "from-orange-500 to-red-500",
     position: { top: "45%", left: "45%" }
+  },
+  {
+    name: "IIT Delhi",
+    location: "Delhi",
+    students: "8000+",
+    color: "from-cyan-500 to-blue-500",
+    position: { top: "25%", left: "30%" }
+  },
+  {
+    name: "IIT Bombay",
+    location: "Mumbai",
+    students: "10000+",
+    color: "from-indigo-500 to-purple-500",
+    position: { top: "50%", left: "25%" }
   }
 ]
 
@@ -49,11 +63,11 @@ export function CampusMapSection() {
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
             Connect Across All{' '}
             <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-              BITS Campuses
+              Premier Institutions
             </span>
           </h2>
           <p className="text-xl text-white/70 max-w-3xl mx-auto">
-            From Pilani to Dubai, connect with BITS students worldwide
+            From IITs to NITs, connect with students from top institutions
           </p>
         </motion.div>
 

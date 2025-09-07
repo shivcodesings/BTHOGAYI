@@ -8,51 +8,51 @@ import { GradientButton } from '@/components/ui/gradient-button'
 const features = [
   {
     icon: Users,
-    title: "CONNECT",
-    subtitle: "Find Your Tribe",
-    description: "Swipe through profiles to find friends with similar interests, hobbies, and campus vibes. Build your BITS social circle one swipe at a time! 👥",
+    title: "COMMUNITIES",
+    subtitle: "Join Your Tribe",
+    description: "Discover and join interest-based communities. From study groups to hobby circles, find your people and build lasting connections! 👥",
     gradient: "from-blue-500 to-cyan-500",
-    stats: "1000+ connections made"
+    stats: "500+ active communities"
   },
   {
     icon: Heart,
-    title: "FIND LOVE",
-    subtitle: "Romantic Connections",
-    description: "Discover your perfect match for dates, proms, and romantic adventures. Our AI algorithm finds people who share your values and interests. 💕",
+    title: "SMART MATCHING",
+    subtitle: "AI-Powered Connections",
+    description: "Our AI finds compatible study buddies, activity partners, and potential dates based on your interests and campus life. Quality over quantity! 💕",
     gradient: "from-pink-500 to-rose-500",
-    stats: "500+ couples formed"
+    stats: "2000+ successful matches"
   },
   {
     icon: Ship,
-    title: "SHIPPING",
-    subtitle: "Friends as Cupids",
-    description: "Let your friends play matchmaker! Send anonymous ships to connect people you think would be perfect together. Be the cupid! 🚢",
+    title: "FRIEND INTRODUCTIONS",
+    subtitle: "Social Wingman",
+    description: "Help friends connect! Introduce people you think would get along great. Anonymous introductions make networking natural and fun! 🚢",
     gradient: "from-purple-500 to-pink-500",
-    stats: "300+ ships sent"
+    stats: "1000+ introductions made"
   },
   {
     icon: MessageCircle,
-    title: "SMART MESSAGING",
-    subtitle: "Quality over Quantity",
-    description: "5 meaningful messages to make the perfect first impression. No spam, just genuine conversations that lead to real connections. 💬",
+    title: "RIZZ IN 5",
+    subtitle: "Quality Conversations",
+    description: "Start with 5 meaningful messages, then move to your preferred platform. No endless scrolling, just genuine connections that matter. 💬",
     gradient: "from-indigo-500 to-purple-500",
     stats: "95% response rate"
   },
   {
     icon: Dice6,
-    title: "DAILY MATCH",
-    subtitle: "Serendipity Every Day",
-    description: "Get a fresh match every day! Our AI carefully curates each recommendation based on compatibility, interests, and mutual attraction. ✨",
+    title: "DAILY DISCOVER",
+    subtitle: "Campus Serendipity",
+    description: "Discover someone new every day! AI-curated connections, campus events, and community highlights. Never miss out on campus life! ✨",
     gradient: "from-cyan-500 to-blue-500",
-    stats: "Daily surprises"
+    stats: "Fresh discoveries daily"
   },
   {
     icon: Coffee,
-    title: "GROUP ROOMS",
-    subtitle: "Community Building",
-    description: "Join study groups, hobby clubs, and event planning communities. Build connections beyond one-on-one interactions. 🎉",
+    title: "CAMPUS EVENTS",
+    subtitle: "Real-World Meetups",
+    description: "Organize and join campus events, study sessions, and social gatherings. From coffee chats to fest planning - make it happen! 🎉",
     gradient: "from-orange-500 to-red-500",
-    stats: "Coming soon"
+    stats: "300+ events monthly"
   }
 ]
 
@@ -80,11 +80,12 @@ export function FeaturesSection() {
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
             Everything You Need to{' '}
             <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-              Find Love & Friends
+              Build Campus Connections
             </span>
           </h2>
           <p className="text-xl text-white/70 max-w-3xl mx-auto leading-relaxed">
-            Swipe, match, and connect with fellow BITS students. Find your perfect match for friendship, dating, and everything in between! 💖
+            Join communities, discover study buddies, and create lasting friendships. 
+            Smart socialising designed for campus life! 🎓✨
           </p>
         </motion.div>
 
@@ -143,7 +144,7 @@ export function FeaturesSection() {
           className="text-center mt-16"
         >
           <GradientButton size="lg" variant="primary">
-            Start Swiping & Matching! 💕
+            Join Your Campus Community! 🎓
             <ArrowRight className="w-5 h-5" />
           </GradientButton>
         </motion.div>

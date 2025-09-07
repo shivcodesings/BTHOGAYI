@@ -64,29 +64,29 @@ export function CTASection() {
             <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
               Ready to Find Your{' '}
               <span className="bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
-                Perfect Match?
+                Campus Community?
               </span>
             </h2>
 
             {/* Subheadline */}
             <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto leading-relaxed">
-              Join thousands of BITS students who have already found their connections. 
-              Your next best friend or life partner could be just one click away.
+              Join thousands of college students building authentic campus connections. 
+              Your study buddy, activity partner, or best friend could be just one click away.
             </p>
 
             {/* Stats */}
             <div className="grid md:grid-cols-3 gap-6 mb-10">
               <div className="text-center">
                 <div className="text-3xl font-bold text-blue-400 mb-2">1000+</div>
-                <p className="text-white/70">Active Students</p>
+                <p className="text-white/70">Verified Students</p>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-pink-400 mb-2">500+</div>
-                <p className="text-white/70">Successful Matches</p>
+                <p className="text-white/70">Active Communities</p>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-purple-400 mb-2">4</div>
-                <p className="text-white/70">BITS Campuses</p>
+                <div className="text-3xl font-bold text-purple-400 mb-2">10+</div>
+                <p className="text-white/70">Partner Institutions</p>
               </div>
             </div>
 
@@ -97,7 +97,7 @@ export function CTASection() {
                 variant="romantic"
                 onClick={() => navigate('/auth')}
               >
-                Join BITSPARK Now <ArrowRight className="w-5 h-5" />
+                Join ORIGO Now <ArrowRight className="w-5 h-5" />
               </GradientButton>
               
               <GradientButton
@@ -114,7 +114,7 @@ export function CTASection() {
             {/* Trust Badge */}
             <div className="mt-8 text-center">
               <p className="text-white/60 text-sm">
-                🔒 Secure • ✅ Verified Students Only • 🎓 All BITS Campuses
+                🔒 Secure • ✅ Verified Students Only • 🎓 Premier Institutions
               </p>
             </div>
           </GlassCard>

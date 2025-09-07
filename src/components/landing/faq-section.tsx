@@ -7,36 +7,36 @@ import { GlassCard } from '@/components/ui/glass-card'
 
 const faqs = [
   {
-    question: "Who can join BITSPARK?",
-    answer: "Only verified BITS Pilani students from all campuses (Pilani, Goa, Hyderabad, Dubai) can join. You need a valid BITS email address and student ID for verification."
+    question: "Who can join ORIGO?",
+    answer: "Only verified college students from premier institutions like IITs, NITs, and BITS can join. You need a valid college email address and student ID for verification."
   },
   {
     question: "How does the AI matching work?",
-    answer: "Our AI analyzes your interests, personality traits, and preferences to find compatible matches. You can choose +1 for similar personalities or -1 for opposite attractions."
+    answer: "Our AI analyzes your interests, academic background, and campus activities to suggest compatible study buddies, activity partners, and communities. It focuses on building meaningful connections."
   },
   {
-    question: "What is the 5-message limit?",
-    answer: "To encourage meaningful conversations, you get 5 messages per connection. After that, you'll be redirected to external platforms like WhatsApp or Instagram to continue chatting."
+    question: "What is Rizz in 5?",
+    answer: "Our quality conversation system gives you 5 meaningful messages to make a great first impression. After that, you can move to your preferred messaging platform for deeper conversations."
   },
   {
-    question: "How does shipping work?",
-    answer: "Friends can 'ship' you with other users they think you'd be compatible with. You can choose to accept or decline these suggestions, and shipping can be done anonymously."
+    question: "How do friend introductions work?",
+    answer: "Friends can introduce you to other students they think you'd get along with. These introductions can be anonymous and include compatibility insights to break the ice naturally."
   },
   {
     question: "Is my data safe?",
-    answer: "Absolutely! We use end-to-end encryption for messages, secure data storage, and never share your personal information with third parties. Your privacy is our top priority."
+    answer: "Absolutely! We use campus verification, secure data storage, and never share your personal information. Your privacy and safety are our top priorities."
   },
   {
-    question: "Can I connect with students from other campuses?",
-    answer: "Yes! BITSPARK connects students across all BITS campuses. You can find friends and dates from Pilani, Goa, Hyderabad, and Dubai."
+    question: "Can I connect with students from other institutions?",
+    answer: "Yes! ORIGO connects students across premier institutions. Premium users can network across IITs, NITs, BITS, and other partner colleges."
   },
   {
     question: "How do I get verified?",
     answer: "Upload your student ID and a clear profile photo. Our team manually verifies each account to ensure authenticity and safety."
   },
   {
-    question: "Is BITSPARK free?",
-    answer: "Yes, BITSPARK is completely free for all BITS students. We may introduce premium features in the future, but core functionality will always be free."
+    question: "Is ORIGO free?",
+    answer: "Yes, ORIGO is free for all verified college students. Premium features (₹399/month) unlock cross-campus networking and advanced community tools."
   }
 ]
 

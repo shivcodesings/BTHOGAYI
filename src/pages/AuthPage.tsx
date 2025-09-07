@@ -20,7 +20,7 @@ export default function AuthPage() {
     const urlError = urlParams.get('error')
     
     if (urlError === 'invalid-email') {
-      setError('Please use your BITS email address to sign in')
+      setError('Please use your verified college email address to sign in')
     } else if (urlError === 'auth-failed') {
       setError('Authentication failed. Please try again.')
     } else if (urlError === 'session-error') {
@@ -92,7 +92,7 @@ export default function AuthPage() {
               transition={{ delay: 0.3 }}
               className="text-3xl font-bold text-white mb-2"
             >
-              Welcome to BITSPARK
+              Welcome to ORIGO
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -100,7 +100,7 @@ export default function AuthPage() {
               transition={{ delay: 0.4 }}
               className="text-white/70"
             >
-              Connect with BITS students across all campuses
+              Smart socialising for campus life
             </motion.p>
           </div>
 
@@ -154,7 +154,7 @@ export default function AuthPage() {
             <div className="space-y-2">
               <div className="flex items-center gap-2 text-white/70 text-sm">
                 <CheckCircle className="w-4 h-4 text-green-400" />
-                <span>BITS email verification required</span>
+                <span>College email verification required</span>
               </div>
               <div className="flex items-center gap-2 text-white/70 text-sm">
                 <CheckCircle className="w-4 h-4 text-green-400" />
@@ -180,7 +180,7 @@ export default function AuthPage() {
           >
             <h4 className="text-white/80 font-medium text-sm mb-2 flex items-center gap-2">
               <Users className="w-4 h-4 text-blue-400" />
-              Supported Campuses:
+              Supported Institutions:
             </h4>
             <div className="grid grid-cols-2 gap-2 text-white/60 text-xs">
               <div className="flex items-center gap-1">
@@ -210,7 +210,7 @@ export default function AuthPage() {
             className="mt-4 text-center"
           >
             <p className="text-white/50 text-xs">
-              🔐 Secured with JWT tokens and multi-layer authentication
+              🔐 Secured with JWT tokens and campus verification
             </p>
           </motion.div>
         </GlassCard>

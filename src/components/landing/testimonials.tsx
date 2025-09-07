@@ -9,7 +9,7 @@ const testimonials = [
     name: "Arjun Sharma",
     campus: "BITS Pilani",
     year: "3rd Year CSE",
-    content: "BITSPARK helped me find my best friends and even my girlfriend! The AI matching is incredibly accurate.",
+    content: "ORIGO helped me find my study group and amazing friends! The community features are game-changing.",
     rating: 5,
     avatar: "AS"
   },
@@ -17,23 +17,23 @@ const testimonials = [
     name: "Priya Patel",
     campus: "BITS Goa",
     year: "2nd Year ECE",
-    content: "The shipping feature is so fun! My friends matched me with someone perfect. We're going to prom together!",
+    content: "The friend introduction feature is amazing! Found my activity partner through a mutual friend's suggestion.",
     rating: 5,
     avatar: "PP"
   },
   {
     name: "Rahul Kumar",
-    campus: "BITS Hyderabad",
+    campus: "IIT Delhi",
     year: "4th Year Mech",
-    content: "Finally, a platform made just for BITS students. The verification process makes it so much safer.",
+    content: "Finally, a platform made for college students. The verification process makes it so much safer and authentic.",
     rating: 5,
     avatar: "RK"
   },
   {
     name: "Sneha Reddy",
-    campus: "BITS Dubai",
+    campus: "NIT Karnataka",
     year: "1st Year CS",
-    content: "Love the daily match feature! Every day brings a new surprise connection. Made so many friends already.",
+    content: "Love the daily discover feature! Every day brings new communities and connections. Campus life is so much better now.",
     rating: 5,
     avatar: "SR"
   }
@@ -51,13 +51,13 @@ export function TestimonialsSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            What BITS Students{' '}
+            What College Students{' '}
             <span className="bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">
               Are Saying
             </span>
           </h2>
           <p className="text-xl text-white/70 max-w-3xl mx-auto">
-            Real stories from real BITS students who found their connections
+            Real stories from verified college students building authentic connections
           </p>
         </motion.div>
 

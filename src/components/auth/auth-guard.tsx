@@ -47,7 +47,7 @@ export function AuthGuard({
           setAuthStep('Validating BITS email...')
           
           // Validate BITS email
-          if (!AuthService.validateBitsEmail(session.user.email!)) {
+          if (!AuthService.validateCollegeEmail(session.user.email!)) {
             await AuthService.signOut()
             logout()
             navigate('/auth?error=invalid-email')
@@ -60,7 +60,12 @@ export function AuthGuard({
           // Get or create user profile
           let profile = await AuthService.getUserProfile(session.user.id)
           console.log('🔧 AUTH GUARD: Profile result:', profile ? 'found' : 'not found')
-          
+            'dubai.bits-pilani.ac.in',
+            'iitd.ac.in',
+            'iitb.ac.in',
+            'iitkgp.ac.in',
+            'nitk.edu.in',
+            'nitt.edu'
           if (!profile) {
             setAuthStep('Creating profile...')
             console.log('🔧 AUTH GUARD: Creating new profile...')
@@ -134,7 +139,7 @@ export function AuthGuard({
           }
         } else if (event === 'SIGNED_IN' && session?.user) {
           // Validate BITS email on sign in
-          if (!AuthService.validateBitsEmail(session.user.email!)) {
+          if (!AuthService.validateCollegeEmail(session.user.email!)) {
             await AuthService.signOut()
             logout()
             navigate('/auth?error=invalid-email')
@@ -198,7 +203,7 @@ export function AuthGuard({
             </motion.div>
 
             <h2 className="text-2xl font-bold text-white mb-2">
-              Authenticating...
+              Loading ORIGO...
             </h2>
             <p className="text-white/70 mb-8">{authStep}</p>
 

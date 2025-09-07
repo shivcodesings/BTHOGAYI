@@ -3,7 +3,7 @@ import { LocalRecommendationEngine } from './local-recommendations'
 import { AuthService } from './auth'
 
 // Secure API Configuration
-const RECOMMENDATION_API_URL = import.meta.env.VITE_RECOMMENDATION_API_URL
+const RECOMMENDATION_API_URL = import.meta.env.VITE_RECOMMENDATION_API_URL || 'https://bthogayi.onrender.com'
 const USE_LOCAL_FALLBACK = true // Force local fallback for now due to CORS issues
 
 export interface RecommendationRequest {
